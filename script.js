@@ -13,7 +13,7 @@ const obs = new IntersectionObserver(
   
   // ── FLOWER BUTTON ──
   document.getElementById('flowerButton').onclick = () => {
-    window.location.href = 'flowers.html';
+    window.location.href = 'https://sasetyo.github.io/Flowers/';
   };
   
   // ── MUSIC TOGGLE ──

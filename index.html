@@ -1,91 +1,105 @@
 <!DOCTYPE html>
 <html lang="id">
-
 <head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>18</title>
-
-<link rel="stylesheet" href="style.css">
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>18 — Elvira</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&family=Jost:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<div class="wrapper">
+  <!-- floating petals -->
+  <div class="petal" style="left:7%;  animation-duration:13s; animation-delay:0s;"></div>
+  <div class="petal" style="left:23%; animation-duration:18s; animation-delay:3s; width:9px;height:15px;"></div>
+  <div class="petal" style="left:52%; animation-duration:15s; animation-delay:1.5s;"></div>
+  <div class="petal" style="left:74%; animation-duration:20s; animation-delay:5s; width:5px;height:9px;"></div>
+  <div class="petal" style="left:89%; animation-duration:11s; animation-delay:2s; width:8px;height:14px;"></div>
+  <div class="petal" style="left:38%; animation-duration:16s; animation-delay:7s; width:6px;height:11px;"></div>
 
-<section class="hero fade">
-
-<img src="foto1.jpg" class="profile">
-
-<h1>Happy Birthday Elvira Ayu Thirany</h1>
-
-<p class="subtitle">
-halaman kecil untuk seseorang
-yang pernah membuat ulang tahunku
-jadi sangat berarti
-i loved you before anw
-</p>
-
-</section>
-
-
-<section class="message fade">
-
-<h2>Thanksss</h2>
-
-<p>
-Terima kasih untuk hadiah dan kata-kata
-yang kamu kasih waktu itu.
-Hal kecil ini cuma cara sederhana
-untuk mengembalikan semuanya
-dengan niat baik.
-</p>
-
-</section>
-
-
-<section class="memories fade">
-
-<h2>Memories</h2>
-
-<div class="gallery">
-
-    <img src="foto1.jpg" class="slide">
-    <img src="foto2.jpg" class="slide">
-    <img src="foto3.jpg" class="slide">
-    
+  <!-- HERO -->
+  <section class="hero">
+    <div class="photo-wrap">
+      <div class="ring"></div>
+      <div class="ring2"></div>
+      <img src="foto1.jpg" class="profile"
+           onerror="this.style.display='none';document.querySelector('.profile-placeholder').style.display='flex'">
+      <div class="profile-placeholder">🌸</div>
     </div>
-    
-</section>
 
+    <p class="eyebrow">✦ 18 ✦</p>
+    <h1>buat Elvira<br>Ayu Thirany 🌸</h1>
+    <p class="hero-sub">
+      selamat ulang tahun yang ke-18.<br>
+      semoga hari ini seindah<br>
+      kamu yang dulu bikin hari-hariku<br>
+      jadi jauh lebih berarti.<br>
+      <em>i loved you before anw.</em>
+    </p>
 
-<section class="gift fade">
+    <div class="scroll-hint">
+      <span>scroll</span>
+      <svg viewBox="0 0 14 22" fill="none" stroke="var(--muted)" stroke-width="1.4">
+        <path d="M7 3 v10 M3 9 l4 4 4-4"/>
+      </svg>
+    </div>
+  </section>
 
-<button id="giftButton" class="giftBtn">
-🎁 buka hadiah
-</button>
+  <!-- DIVIDER -->
+  <div class="divider fade"><span>✿</span></div>
 
-</section>
+  <!-- MESSAGE -->
+  <div class="section fade">
+    <span class="section-tag">untuk kamu</span>
+    <h2>makasih ya 🤍</h2>
+    <p>
+      beneran, makasih buat hadiah dan kata-kata
+      yang kamu kasih waktu itu — itu berasa banget.
+      ini cuma cara kecil buat ngebalikin
+      kebaikan yang sama, dengan niat yang tulus.
+    </p>
+  </div>
 
-</div>
+  <!-- MEMORIES -->
+  <div class="strip-wrap fade">
+    <p class="strip-label">memories</p>
+    <div class="strip" id="strip">
+      <div class="photo-card ph1">
+        <img src="foto1.jpg" alt="" onerror="this.style.display='none'">
+      </div>
+      <div class="photo-card ph2">
+        <img src="foto2.jpg" alt="" onerror="this.style.display='none'">
+      </div>
+      <div class="photo-card ph3">
+        <img src="foto3.jpg" alt="" onerror="this.style.display='none'">
+      </div>
+    </div>
+    <p class="strip-hint">geser →</p>
+  </div>
 
+  <!-- DIVIDER -->
+  <div class="divider fade"><span>✾</span></div>
 
-<button id="musicBtn" class="musicBtn">
-🎵
-</button>
+  <!-- GIFT -->
+  <div class="gift-area fade">
+    <span class="section-tag">ada yang buat kamu</span>
+    <h2>satu lagi 🎁</h2>
+    <p>kecil sih, tapi dari hati.</p>
+    <div class="btn-group">
+      <button class="giftBtn" id="giftButton">🎁 &nbsp;buka hadiah</button>
+      <button class="giftBtn ghost" id="flowerButton">🌸 &nbsp;ada bunga juga</button>
+    </div>
+  </div>
 
+  <!-- FOOTER -->
+  <div class="footer fade">dengan niat baik, selalu ✦</div>
 
-<audio id="bgMusic" loop>
-<source src="music.mp3" type="audio/mp3">
-</audio>
+  <!-- MUSIC -->
+  <button class="musicBtn" id="musicBtn">🎵</button>
+  <audio id="bgMusic" loop>
+    <source src="music.mp3" type="audio/mp3">
+  </audio>
 
-
-<script src="script.js"></script>
-
+  <script src="script.js"></script>
 </body>
 </html>

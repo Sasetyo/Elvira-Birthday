@@ -266,6 +266,9 @@
   .ph1 { background: linear-gradient(160deg, #f0e2cc, #e0cebc); min-height: 260px; }
   .ph2 { background: linear-gradient(160deg, #d6e6cc, #bdd4b0); min-height: 260px; }
   .ph3 { background: linear-gradient(160deg, #e6d4cc, #d4beb4); min-height: 260px; }
+  .ph4 { background: linear-gradient(160deg, #e6d4cc, #cfbab0); min-height: 260px; }
+  .ph5 { background: linear-gradient(160deg, #e6d4cc, #d6bdb1); min-height: 260px; }
+  .ph6 { background: linear-gradient(160deg, #e6d4cc, #d4beb4); min-height: 260px; }
   
   .strip-hint {
     font-size: 11px;

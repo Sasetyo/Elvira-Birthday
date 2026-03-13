@@ -8,7 +8,7 @@ const obs = new IntersectionObserver(
   // ── GIFT BUTTON ──
   // Ganti LINK_DANA_KAGET dengan link dana kaget kamu
   document.getElementById('giftButton').onclick = () => {
-    window.location.href = 'sasetyo.github.io/Message-4u/';
+    window.location.href = 'https://sasetyo.github.io/Message-4u';
   };
   
   // ── FLOWER BUTTON ──
